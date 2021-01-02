@@ -1,1 +1,1 @@
-<?php "Module ext Ol" ?>
+<?php echo "Module ext ok2323" ?>
