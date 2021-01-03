@@ -1,6 +1,6 @@
 <?php
 
-namespace vendor\ilkerozcn\yii2proje\src\controllers;
+namespace ilkerozcn\proje\controllers;
 
 use Yii;
 use vendor\ilkerozcn\yii2proje\src\models\Deneme;
@@ -56,7 +56,10 @@ class DenemeController extends Controller
             'model' => $this->findModel($id),
         ]);
     }
-
+    public function actionYazdir()
+    {
+        return $this->render('yazdir');
+    }
     /**
      * Creates a new Deneme model.
      * If creation is successful, the browser will be redirected to the 'view' page.
@@ -74,6 +77,7 @@ class DenemeController extends Controller
             'model' => $model,
         ]);
     }
+
 
     /**
      * Updates an existing Deneme model.

@@ -17,7 +17,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a('Create Deneme', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-
+    <p>
+        <?= Html::a('Yazdır', ['yazdir'], ['class' => 'btn btn-success']) ?>
+    </p>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?= GridView::widget([
@@ -30,6 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'Soyad:ntext',
             'Yas',
             'id',
+            'Yoklama',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
