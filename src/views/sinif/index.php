@@ -4,22 +4,20 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel vendor\ilkerozcn\yii2proje\src\models\DenemeSearch */
+/* @var $searchModel vendor\ilkerozcn\yii2proje\src\models\SinifSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Denemes';
+$this->title = 'Sinifs';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="deneme-index">
+<div class="sinif-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Deneme', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Sinif', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-    <p>
-        <?= Html::a('Yazdır', ['yazdir'], ['class' => 'btn btn-success']) ?>
-    </p>
+
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?= GridView::widget([
@@ -28,13 +26,12 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'Ad:ntext',
-            'Soyad:ntext',
-            'Yas',
+            'Sinif:ntext',
+            'Ogretmen:ntext',
+            'OgrenciSayisi',
             'id',
 
-
-              ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
 

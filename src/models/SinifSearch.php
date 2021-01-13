@@ -4,12 +4,12 @@ namespace vendor\ilkerozcn\yii2proje\src\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use vendor\ilkerozcn\yii2proje\src\models\Deneme;
+use vendor\ilkerozcn\yii2proje\src\models\Sinif;
 
 /**
- * DenemeSearch represents the model behind the search form of `vendor\ilkerozcn\yii2proje\src\models\Deneme`.
+ * SinifSearch represents the model behind the search form of `vendor\ilkerozcn\yii2proje\src\models\Sinif`.
  */
-class DenemeSearch extends Deneme
+class SinifSearch extends Sinif
 {
     /**
      * {@inheritdoc}
@@ -17,9 +17,8 @@ class DenemeSearch extends Deneme
     public function rules()
     {
         return [
-            [['Ad', 'Soyad'], 'safe'],
-            [['Yas', 'id'], 'integer'],
-
+            [['Sinif', 'Ogretmen'], 'safe'],
+            [['OgrenciSayisi', 'id'], 'integer'],
         ];
     }
 
@@ -41,7 +40,7 @@ class DenemeSearch extends Deneme
      */
     public function search($params)
     {
-        $query = Deneme::find();
+        $query = Sinif::find();
 
         // add conditions that should always apply here
 
@@ -59,13 +58,12 @@ class DenemeSearch extends Deneme
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'Yas' => $this->Yas,
+            'OgrenciSayisi' => $this->OgrenciSayisi,
             'id' => $this->id,
-
         ]);
 
-        $query->andFilterWhere(['like', 'Ad', $this->Ad])
-            ->andFilterWhere(['like', 'Soyad', $this->Soyad]);
+        $query->andFilterWhere(['like', 'Sinif', $this->Sinif])
+            ->andFilterWhere(['like', 'Ogretmen', $this->Ogretmen]);
 
         return $dataProvider;
     }

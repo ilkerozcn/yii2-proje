@@ -3,16 +3,16 @@
 namespace ilkerozcn\proje\controllers;
 
 use Yii;
-use vendor\ilkerozcn\yii2proje\src\models\Deneme;
-use vendor\ilkerozcn\yii2proje\src\models\DenemeSearch;
+use vendor\ilkerozcn\yii2proje\src\models\Sinif;
+use vendor\ilkerozcn\yii2proje\src\models\SinifSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * DenemeController implements the CRUD actions for Deneme model.
+ * SinifController implements the CRUD actions for Sinif model.
  */
-class DenemeController extends Controller
+class SinifController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -30,19 +30,12 @@ class DenemeController extends Controller
     }
 
     /**
-     * Lists all Deneme models.
+     * Lists all Sinif models.
      * @return mixed
      */
-    public function actionMerge(){
-
-
-
-
-        
-    }
     public function actionIndex()
     {
-        $searchModel = new DenemeSearch();
+        $searchModel = new SinifSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -52,7 +45,7 @@ class DenemeController extends Controller
     }
 
     /**
-     * Displays a single Deneme model.
+     * Displays a single Sinif model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -63,18 +56,15 @@ class DenemeController extends Controller
             'model' => $this->findModel($id),
         ]);
     }
-    public function actionYazdir()
-    {
-        return $this->render('yazdir');
-    }
+
     /**
-     * Creates a new Deneme model.
+     * Creates a new Sinif model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Deneme();
+        $model = new Sinif();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -85,9 +75,8 @@ class DenemeController extends Controller
         ]);
     }
 
-
     /**
-     * Updates an existing Deneme model.
+     * Updates an existing Sinif model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -107,7 +96,7 @@ class DenemeController extends Controller
     }
 
     /**
-     * Deletes an existing Deneme model.
+     * Deletes an existing Sinif model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -121,15 +110,15 @@ class DenemeController extends Controller
     }
 
     /**
-     * Finds the Deneme model based on its primary key value.
+     * Finds the Sinif model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Deneme the loaded model
+     * @return Sinif the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Deneme::findOne($id)) !== null) {
+        if (($model = Sinif::findOne($id)) !== null) {
             return $model;
         }
 

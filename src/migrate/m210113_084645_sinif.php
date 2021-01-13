@@ -3,20 +3,21 @@
 use yii\db\Migration;
 use yii\db\Schema;
 /**
- * Class m210102_162837_deneme
+ * Class m210113_084645_sinif
  */
-class m210102_162837_deneme extends Migration
+class m210113_084645_sinif extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('deneme', [
+
+        $this->createTable('sinif', [
             'id' => Schema::TYPE_PK,
-            'Ad' => Schema::TYPE_STRING . ' NOT NULL',
-            'Soyad' => Schema::TYPE_STRING . ' NOT NULL',
-            'Yas' => Schema::TYPE_INTEGER . ' NOT NULL',
+            'Sinif' => Schema::TYPE_STRING . ' NOT NULL',
+            'Ogretmen' => Schema::TYPE_STRING . ' NOT NULL',
+            'OgrenciSayisi' => Schema::TYPE_INTEGER . ' NOT NULL',
 
         ]);
     }
@@ -26,7 +27,7 @@ class m210102_162837_deneme extends Migration
      */
     public function safeDown()
     {
-        echo "m210102_162837_deneme cannot be reverted.\n";
+        echo "m210113_084645_sinif cannot be reverted.\n";
 
         return false;
     }
@@ -40,7 +41,7 @@ class m210102_162837_deneme extends Migration
 
     public function down()
     {
-        echo "m210102_162837_deneme cannot be reverted.\n";
+        echo "m210113_084645_sinif cannot be reverted.\n";
 
         return false;
     }
