@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel vendor\ilkerozcn\yii2proje\src\models\SinifSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Sinifs';
+$this->title = 'Siniflar';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="sinif-index">
@@ -15,9 +15,14 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Sinif', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Sınıf Ekle', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
+    <p> <center>
+        <?= Html::a('Öğrenci Listesini Görmek İçin Tıklayınız', ['/proje/deneme'], ['class'=>'btn btn-primary']) ?>
+    </center>
 
+
+       </p>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?= GridView::widget([
@@ -28,8 +33,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'Sinif:ntext',
             'Ogretmen:ntext',
-            'OgrenciSayisi',
-            'id',
+
+            'Deneme_sinif_id',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

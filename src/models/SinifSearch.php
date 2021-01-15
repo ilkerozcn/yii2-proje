@@ -18,7 +18,7 @@ class SinifSearch extends Sinif
     {
         return [
             [['Sinif', 'Ogretmen'], 'safe'],
-            [['OgrenciSayisi', 'id'], 'integer'],
+            [[ 'Deneme_sinif_id'], 'integer'],
         ];
     }
 
@@ -58,8 +58,8 @@ class SinifSearch extends Sinif
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'OgrenciSayisi' => $this->OgrenciSayisi,
-            'id' => $this->id,
+
+            'Deneme_sinif_id' => $this->Deneme_sinif_id,
         ]);
 
         $query->andFilterWhere(['like', 'Sinif', $this->Sinif])

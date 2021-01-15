@@ -18,7 +18,7 @@ class DenemeSearch extends Deneme
     {
         return [
             [['Ad', 'Soyad'], 'safe'],
-            [['Yas', 'id'], 'integer'],
+            [['Yas', 'id','Sinif_id'], 'integer'],
 
         ];
     }
@@ -61,7 +61,7 @@ class DenemeSearch extends Deneme
         $query->andFilterWhere([
             'Yas' => $this->Yas,
             'id' => $this->id,
-
+            'Sinif_id'=> $this->Sinif_id,
         ]);
 
         $query->andFilterWhere(['like', 'Ad', $this->Ad])

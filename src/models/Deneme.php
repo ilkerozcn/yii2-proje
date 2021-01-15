@@ -10,6 +10,7 @@ use Yii;
  * @property string $Ad
  * @property string $Soyad
  * @property int $Yas
+ * * @property int $Sınıf_id
  * @property boolean $Yoklama
  */
 class Deneme extends \yii\db\ActiveRecord
@@ -30,7 +31,7 @@ class Deneme extends \yii\db\ActiveRecord
         return [
             [['Ad', 'Soyad', 'Yas'], 'required'],
             [['Ad', 'Soyad'], 'string'],
-            [['Yas'], 'integer'],
+            [['Yas','Sinif_id'], 'integer'],
 
         ];
     }
@@ -44,7 +45,7 @@ class Deneme extends \yii\db\ActiveRecord
             'Ad' => 'Ad',
             'Soyad' => 'Soyad',
             'Yas' => 'Yas',
-
+            'Sinif_id'=> 'Sinif_id',
         ];
     }
 

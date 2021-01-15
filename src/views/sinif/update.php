@@ -7,7 +7,7 @@ use yii\helpers\Html;
 
 $this->title = 'Update Sinif: ' . $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Sinifs', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'Deneme_sinif_id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>
 <div class="sinif-update">

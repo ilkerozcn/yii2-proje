@@ -10,7 +10,8 @@ use Yii;
  * @property string $Sinif
  * @property string $Ogretmen
  * @property int $OgrenciSayisi
- * @property int $id
+
+ *  * @property int $Deneme_sinif_id
  */
 class Sinif extends \yii\db\ActiveRecord
 {
@@ -28,9 +29,9 @@ class Sinif extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['Sinif', 'Ogretmen', 'OgrenciSayisi'], 'required'],
+            [['Sinif', 'Ogretmen'], 'required'],
             [['Sinif', 'Ogretmen'], 'string'],
-            [['OgrenciSayisi'], 'integer'],
+            [['Deneme_sinif_id'], 'integer'],
         ];
     }
 
@@ -42,8 +43,7 @@ class Sinif extends \yii\db\ActiveRecord
         return [
             'Sinif' => 'Sinif',
             'Ogretmen' => 'Ogretmen',
-            'OgrenciSayisi' => 'OgrenciSayisi',
-            'id' => 'ID',
+            'Deneme_sinif_id' => 'Deneme_sinif_id',
         ];
     }
 }
