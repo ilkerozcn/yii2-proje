@@ -21,22 +21,20 @@
             "vendor/ilkerozcn/yii2proje": "dev-main"
         }, 
     - Ardından adnavanced/backend içindeki main.php dosyasının içinde aşağıdaki kod düzenlemesi yapılır.
-        'modules' => [
+         'modules' => [
                 'proje' => [
                     'class' =>'ilkerozcn\proje\Module'
                 ]
             ],
     - advanced/vendor klasörü altına ilkerozcn adlı klasör açılıp git clone modül çekilir.
-    
     - Daha sonra webgece makinesi vagrant klasörü altında vagrant up komutu ile çalıştırılır. 
-    
     - Makine çalıştırıldıktan sonra konsoldan advanced dizinine gidilir.
-        ssh -i .vagrant/machines/webgece/virtualbox/private_key vagrant@webgece komutu çalıştırılır.(ssh bağlantısı yapılır)
-        
+        ssh -i .vagrant/machines/webgece/virtualbox/private_key vagrant@webgece komutu çalıştırılır.(ssh bağlantısı yapılır) 
     - Ardından veritabanına tabloların yüklene bilmesi için migrate işlemi yapılır
         php yii migrate --migrationPath=@vendor/ilkerozcn/yii2proje/src/migrate
         yazılır.    
-        
+         
+
  #Modül Kuruldu
  
  ##Modüle erişmek için aşağıdaki url yi tarayıcınızdan çağırmanız yeterlidir.
