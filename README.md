@@ -13,7 +13,7 @@
   
 ![Image of Sınıf](https://drive.google.com/file/d/1PqfFsotfsQs7-UN2QaMQ_jlwzcnhx585)
 
-#Kurulum
+# Kurulum
 
     - Modülü Advanced projesine kurabilmek için Advanced klasörünün içindeki composer.json a
     aşağıdaki kod parçası eklenmelidir.
@@ -42,8 +42,8 @@
         yazılır.    
          
 
- #Modül Kuruldu
+ # Modül Kuruldu
  
- ##Modüle erişmek için aşağıdaki url yi tarayıcınızdan çağırmanız yeterlidir.
+ ## Modüle erişmek için aşağıdaki url yi tarayıcınızdan çağırmanız yeterlidir.
  
  http://advanced/backend/web/index.php?r=proje/deneme
