@@ -9,8 +9,10 @@
  - Aynı zamanda öğrenci eklemek, çıkarmak, bilgileri 
   üzerinde düzenleme yapmak da mümkündür.
  
-  ![Image of Ogrenci](https://drive.google.com/file/d/1sIz95V9OJ_FQbneNj7GmzfBPa7RHMGjE/view?usp=sharing)
-![Image of Sınıf](https://drive.google.com/file/d/1PqfFsotfsQs7-UN2QaMQ_jlwzcnhx585/view?usp=sharing)
+  ![Image of Ogrenci](https://drive.google.com/file/d/1sIz95V9OJ_FQbneNj7GmzfBPa7RHMGjE)
+  
+![Image of Sınıf](https://drive.google.com/file/d/1PqfFsotfsQs7-UN2QaMQ_jlwzcnhx585)
+
 #Kurulum
     - Modülü Advanced projesine kurabilmek için Advanced klasörünün içindeki composer.json a
     aşağıdaki kod parçası eklenmelidir.
@@ -36,5 +38,7 @@
         yazılır.    
         
  #Modül Kuruldu
+ 
  ##Modüle erişmek için aşağıdaki url yi tarayıcınızdan çağırmanız yeterlidir.
+ 
  http://advanced/backend/web/index.php?r=proje/deneme
