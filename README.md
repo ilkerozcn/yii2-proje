@@ -9,9 +9,9 @@
  - Aynı zamanda öğrenci eklemek, çıkarmak, bilgileri 
   üzerinde düzenleme yapmak da mümkündür.
  
-![Image of Ogrenci](https://drive.google.com/file/d/1sIz95V9OJ_FQbneNj7GmzfBPa7RHMGjE)
+![1sIz95V9OJ_FQbneNj7GmzfBPa7RHMGjE](https://drive.google.com/file/d/1sIz95V9OJ_FQbneNj7GmzfBPa7RHMGjE)
   
-![Image of Sınıf](https://drive.google.com/file/d/1PqfFsotfsQs7-UN2QaMQ_jlwzcnhx585)
+![1PqfFsotfsQs7-UN2QaMQ_jlwzcnhx585)](https://drive.google.com/file/d/1PqfFsotfsQs7-UN2QaMQ_jlwzcnhx585)
 
 # Kurulum
 
