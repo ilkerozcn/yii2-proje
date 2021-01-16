@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'Sinif:ntext',
             'Ogretmen:ntext',
 
-            'Deneme_sinif_id',
+
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

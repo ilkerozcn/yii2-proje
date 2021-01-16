@@ -6,17 +6,18 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model vendor\ilkerozcn\yii2proje\src\models\Sinif */
 
-$this->title = $model->id;
+$this->title = $model->Deneme_sinif_id;
 $this->params['breadcrumbs'][] = ['label' => 'Sinifs', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
+
 <div class="sinif-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'Deneme_sinif_id' => $model->Deneme_sinif_id], ['class' => 'btn btn-primary']) ?>
+
         <?= Html::a('Delete', ['delete', 'Deneme_sinif_id' => $model->Deneme_sinif_id], [
             'class' => 'btn btn-danger',
             'data' => [
@@ -32,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'Sinif:ntext',
             'Ogretmen:ntext',
 
-            'id',
+            'Deneme_sinif_id',
         ],
     ]) ?>
 

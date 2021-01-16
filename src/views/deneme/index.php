@@ -23,9 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a('Öğrenci Ekle', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-    <p>
-        <?= Html::a('Yazdır', ['yazdir'], ['class' => 'btn btn-success']) ?>
-    </p>
+
        <p><center>
         <?= Html::a('Sınıfları Görmek İçin Tıklayınız', ['/proje/sinif'], ['class'=>'btn btn-primary']) ?>
     </center>

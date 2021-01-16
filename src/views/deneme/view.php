@@ -8,8 +8,10 @@ use yii\widgets\DetailView;
 
 $this->title = $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Denemes', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Sinifs', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
+
 ?>
 <div class="deneme-view">
 
@@ -33,7 +35,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'Soyad:ntext',
             'Yas',
             'id',
-
+            'Sinif_id',
+            'Sinif',
         ],
     ]) ?>
 
