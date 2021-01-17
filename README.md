@@ -40,7 +40,7 @@
     - Ardından veritabanına tabloların yüklene bilmesi için migrate işlemi yapılır
         php yii migrate --migrationPath=@vendor/ilkerozcn/yii2proje/src/migrate
         yazılır.    
-         
+    -Packagistten projeyi çekmek için gerekli olan komut : composer require ilkerozcn/yii2proje
 
  # Modül Kuruldu
  
