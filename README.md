@@ -14,7 +14,8 @@
 ![1PqfFsotfsQs7-UN2QaMQ_jlwzcnhx585)](https://drive.google.com/uc?export=view&id=1PqfFsotfsQs7-UN2QaMQ_jlwzcnhx585)
 
 # Kurulum
-
+    -Packagistten projeyi çekmek için gerekli olan komut : composer require ilkerozcn/yii2proje
+    
     - Modülü Advanced projesine kurabilmek için Advanced klasörünün içindeki composer.json a
     aşağıdaki kod parçası eklenmelidir.
     
@@ -40,7 +41,7 @@
     - Ardından veritabanına tabloların yüklene bilmesi için migrate işlemi yapılır
         php yii migrate --migrationPath=@vendor/ilkerozcn/yii2proje/src/migrate
         yazılır.    
-    -Packagistten projeyi çekmek için gerekli olan komut : composer require ilkerozcn/yii2proje
+    
 
  # Modül Kuruldu
  
