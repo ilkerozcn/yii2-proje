@@ -45,6 +45,6 @@
 
  # Modül Kuruldu
  
- ## Modüle erişmek için aşağıdaki url yi tarayıcınızdan çağırmanız yeterlidir.
+ ## Modüle erişmek için aşağıdaki url yi tarayıcınızdan çağırmanız yeterlidir.                                       İlker Özcan 180202081
  
  http://advanced/backend/web/index.php?r=proje/deneme
